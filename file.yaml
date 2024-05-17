@@ -1,0 +1,110 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM/9tcMmeTQ9SwBpWVGHbpp",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/samson12193/Ingestion_and_pipeline/blob/main/file.yaml\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "W8zxnU_DnWrX"
+      },
+      "outputs": [],
+      "source": [
+        "%%writefile ingested_file_info.yaml\n",
+        "file_type: csv\n",
+        "dataset_name: Combined_Flights_2019\n",
+        "file_name: Combined_Flights_2019\n",
+        "table_name: Combined_Flights_2019\n",
+        "inbound_delimiter: \",\"\n",
+        "outbound_delimiter: \"|\"\n",
+        "skip_leading_rows: 1\n",
+        "columns:\n",
+        "  - FlightDate\n",
+        "  - Airline\n",
+        "  - Origin\n",
+        "  - Dest\n",
+        "  - Cancelled\n",
+        "  - Diverted\n",
+        "  - CRSDepTime\n",
+        "  - DepTime\n",
+        "  - DepDelayMinutes\n",
+        "  - DepDelay\n",
+        "  - ArrTime\n",
+        "  - ArrDelayMinutes\n",
+        "  - AirTime\n",
+        "  - CRSElapsedTime\n",
+        "  - ActualElapsedTime\n",
+        "  - Distance\n",
+        "  - Year\n",
+        "  - Quarter\n",
+        "  - Month\n",
+        "  - DayofMonth\n",
+        "  - DayOfWeek\n",
+        "  - Marketing_Airline_Network\n",
+        "  - Operated_or_Branded_Code_Share_Partners\n",
+        "  - DOT_ID_Marketing_Airline\n",
+        "  - IATA_Code_Marketing_Airline\n",
+        "  - Flight_Number_Marketing_Airline\n",
+        "  - Operating_Airline\n",
+        "  - DOT_ID_Operating_Airline\n",
+        "  - IATA_Code_Operating_Airline\n",
+        "  - Tail_Number\n",
+        "  - Flight_Number_Operating_Airline\n",
+        "  - OriginAirportID\n",
+        "  - OriginAirportSeqID\n",
+        "  - OriginCityMarketID\n",
+        "  - OriginCityName\n",
+        "  - OriginState\n",
+        "  - OriginStateFips\n",
+        "  - OriginStateName\n",
+        "  - OriginWac\n",
+        "  - DestAirportID\n",
+        "  - DestAirportSeqID\n",
+        "  - DestCityMarketID\n",
+        "  - DestCityName\n",
+        "  - DestState\n",
+        "  - DestStateFips\n",
+        "  - DestStateName\n",
+        "  - DestWac\n",
+        "  - DepDel15\n",
+        "  - DepartureDelayGroups\n",
+        "  - DepTimeBlk\n",
+        "  - TaxiOut\n",
+        "  - WheelsOff\n",
+        "  - WheelsOn\n",
+        "  - TaxiIn\n",
+        "  - CRSArrTime\n",
+        "  - ArrDelay\n",
+        "  - ArrDel15\n",
+        "  - ArrivalDelayGroups\n",
+        "  - ArrTimeBlk\n",
+        "  - DistanceGroup\n",
+        "  - DivAirportLandings"
+      ]
+    }
+  ]
+}
